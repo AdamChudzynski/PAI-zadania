@@ -5,32 +5,34 @@ body {min-height: 100%; display: flex; flex-direction: column;}
 * {font-family: Verdana; font-size: 16px; font-weight: unset; 
     text-decoration: unset; color: black;}
 header {display: flex; flex-direction: row;padding: 30px; align-items: center;}
-hm {margin-left: 15px; font-size: 32px; font-weight: bold;}
+h1 {margin-left: 15px; font-size: 32px; font-weight: bold;}
 nav {flex-grow: 2; align-self: flex-start; display: flex; justify-content: flex-end; }
 a {width: 75px;}
 main {display: flex; flex-direction: row; padding: 15px;}
-article {margin: 15px; width: 100%; border: solid; display: flex; flex-direction: column;}
-h {height: 50px; width: 50%; font-size: 1.5em; 
+article {margin: 15px; width: 100%; border: solid; border-width: 2px; display: flex; 
+    flex-direction: column; }
+article header {height: 50px; width: 50%; font-size: 1.5em; 
     display: flex; justify-content: center; align-items: center; align-self: flex-end;
 background-color: lightgray; border-bottom: solid; border-left: solid; border-width: 2px;}
-article akap {text-align: justify; padding: 15px;}
+article p {text-align: justify; padding: 15px;}
 footer {display: flex; flex-direction: column; height: 100px; background-color: lightgray;
 border-top: solid;border-width: 2px; margin-top: 15px; align-items: center;
  justify-content: center; flex-shrink: 0;}
-akap2 {font-weight: bold;}
+footer p {margin:0; padding:0;}
+p + p {font-weight: bold;}
 .content {flex: 1 0 auto;}
-ham {display: none;}
+nav + img {display: none;}
 @media all and (max-width: 900px) {
     main {
     flex-wrap: wrap;
     }
-    tilt{
+    h1, nav{
         display: none;
     }
-    ham{
+    nav + img{
         display: block;
     }
-    header {
+    div > header {
         justify-content: space-between;
     }
 }
