@@ -61,10 +61,6 @@ function alterRows(i, e) {
         alterRows(++i, e);
     }
 }
-function xd()
-{
-    document.getElementsByTagName("TR")[0].innerHTML = "Hello World!";
-}
 
 function nextNode(e) {
     while (e && e.nodeType != 1) {
